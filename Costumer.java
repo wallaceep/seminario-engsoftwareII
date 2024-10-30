@@ -3,6 +3,7 @@ import java.util.*;
 class Customer {
    private String _name;
    private Vector _rentals = new Vector();
+   private int a;
 
    public Customer (String name){
       _name = name;
@@ -23,7 +24,7 @@ class Customer {
      while (rentals.hasMoreElements()) {
         double thisAmount = 0;
         Rental each = (Rental) rentals.nextElement();
-
+         System.out.ln("ta funcionando");
         //determine amounts for each line
         switch (each.getMovie().getPriceCode()) {
            case Movie.REGULAR:
@@ -57,6 +58,7 @@ class Customer {
      result +=  "Amount owed is " + String.valueOf(totalAmount) + "\n";
      result += "You earned " + String.valueOf(frequentRenterPoints) +
              " frequent renter points";
+      private string b;
      return result;
   }
 }
