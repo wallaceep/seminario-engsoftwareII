@@ -24,7 +24,7 @@ class Customer {
      while (rentals.hasMoreElements()) {
         double thisAmount = 0;
         Rental each = (Rental) rentals.nextElement();
-         System.out.ln("ta funcionando");
+         System.out.println("ta funcionando");
         //determine amounts for each line
         switch (each.getMovie().getPriceCode()) {
            case Movie.REGULAR:
